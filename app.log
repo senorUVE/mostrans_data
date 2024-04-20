@@ -1,0 +1,155 @@
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.19.0.2:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:192.168.65.1 - - [20/Apr/2024 20:49:00] "[31m[1mGET /analyze HTTP/1.1[0m" 405 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.21.0.2:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:pymorphy3.opencorpora_dict.wrapper:Loading dictionaries from /usr/local/lib/python3.9/site-packages/pymorphy3_dicts_ru/data
+INFO:pymorphy3.opencorpora_dict.wrapper:format: 2.4, revision: 417150, updated: 2022-01-08T22:09:24.565962
+DEBUG:tzlocal:/etc/timezone found, contents:
+ Etc/UTC
+
+DEBUG:tzlocal:/etc/localtime found
+DEBUG:tzlocal:2 found:
+ {'/etc/timezone': 'Etc/UTC', '/etc/localtime is a symlink to': 'Etc/UTC'}
+INFO:werkzeug:192.168.65.1 - - [20/Apr/2024 20:57:01] "POST /analyze HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [20/Apr/2024 20:57:30] "[31m[1mGET /analyze HTTP/1.1[0m" 405 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.22.0.2:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.22.0.2:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:app:Exception on /analyze [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.9/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.9/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.9/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/app/app.py", line 30, in analyze
+    df = pd.read_excel('/Users/user/Downloads/nlp_shitttttt/app/mostrans_data.xlsx')
+  File "/usr/local/lib/python3.9/site-packages/pandas/io/excel/_base.py", line 495, in read_excel
+    io = ExcelFile(
+  File "/usr/local/lib/python3.9/site-packages/pandas/io/excel/_base.py", line 1550, in __init__
+    ext = inspect_excel_format(
+  File "/usr/local/lib/python3.9/site-packages/pandas/io/excel/_base.py", line 1402, in inspect_excel_format
+    with get_handle(
+  File "/usr/local/lib/python3.9/site-packages/pandas/io/common.py", line 882, in get_handle
+    handle = open(handle, ioargs.mode)
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/user/Downloads/nlp_shitttttt/app/mostrans_data.xlsx'
+INFO:werkzeug:192.168.65.1 - - [20/Apr/2024 21:00:49] "[35m[1mPOST /analyze HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.23.0.2:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.24.0.2:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:app:Exception on /analyze [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.9/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.9/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.9/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/app/app.py", line 30, in analyze
+    df = pd.read_excel('app/mostrans_data.xlsx')
+  File "/usr/local/lib/python3.9/site-packages/pandas/io/excel/_base.py", line 495, in read_excel
+    io = ExcelFile(
+  File "/usr/local/lib/python3.9/site-packages/pandas/io/excel/_base.py", line 1550, in __init__
+    ext = inspect_excel_format(
+  File "/usr/local/lib/python3.9/site-packages/pandas/io/excel/_base.py", line 1402, in inspect_excel_format
+    with get_handle(
+  File "/usr/local/lib/python3.9/site-packages/pandas/io/common.py", line 882, in get_handle
+    handle = open(handle, ioargs.mode)
+FileNotFoundError: [Errno 2] No such file or directory: 'app/mostrans_data.xlsx'
+INFO:werkzeug:192.168.65.1 - - [20/Apr/2024 21:03:57] "[35m[1mPOST /analyze HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.25.0.2:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:pymorphy3.opencorpora_dict.wrapper:Loading dictionaries from /usr/local/lib/python3.9/site-packages/pymorphy3_dicts_ru/data
+INFO:pymorphy3.opencorpora_dict.wrapper:format: 2.4, revision: 417150, updated: 2022-01-08T22:09:24.565962
+DEBUG:tzlocal:/etc/timezone found, contents:
+ Etc/UTC
+
+DEBUG:tzlocal:/etc/localtime found
+DEBUG:tzlocal:2 found:
+ {'/etc/timezone': 'Etc/UTC', '/etc/localtime is a symlink to': 'Etc/UTC'}
+INFO:werkzeug:192.168.65.1 - - [20/Apr/2024 21:08:26] "POST /analyze HTTP/1.1" 200 -
+INFO:pymorphy3.opencorpora_dict.wrapper:Loading dictionaries from /usr/local/lib/python3.9/site-packages/pymorphy3_dicts_ru/data
+INFO:pymorphy3.opencorpora_dict.wrapper:format: 2.4, revision: 417150, updated: 2022-01-08T22:09:24.565962
+INFO:werkzeug:192.168.65.1 - - [20/Apr/2024 21:11:58] "POST /analyze HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.26.0.2:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:pymorphy3.opencorpora_dict.wrapper:Loading dictionaries from /usr/local/lib/python3.9/site-packages/pymorphy3_dicts_ru/data
+INFO:pymorphy3.opencorpora_dict.wrapper:format: 2.4, revision: 417150, updated: 2022-01-08T22:09:24.565962
+DEBUG:tzlocal:/etc/timezone found, contents:
+ Etc/UTC
+
+DEBUG:tzlocal:/etc/localtime found
+DEBUG:tzlocal:2 found:
+ {'/etc/timezone': 'Etc/UTC', '/etc/localtime is a symlink to': 'Etc/UTC'}
+INFO:werkzeug:192.168.65.1 - - [20/Apr/2024 21:23:57] "POST /analyze HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.27.0.2:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:pymorphy3.opencorpora_dict.wrapper:Loading dictionaries from /usr/local/lib/python3.9/site-packages/pymorphy3_dicts_ru/data
+INFO:pymorphy3.opencorpora_dict.wrapper:format: 2.4, revision: 417150, updated: 2022-01-08T22:09:24.565962
+DEBUG:tzlocal:/etc/timezone found, contents:
+ Etc/UTC
+
+DEBUG:tzlocal:/etc/localtime found
+DEBUG:tzlocal:2 found:
+ {'/etc/timezone': 'Etc/UTC', '/etc/localtime is a symlink to': 'Etc/UTC'}
+INFO:werkzeug:192.168.65.1 - - [20/Apr/2024 21:25:20] "POST /analyze HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [20/Apr/2024 21:31:32] "[31m[1mPOST /analyze HTTP/1.1[0m" 415 -
+INFO:pymorphy3.opencorpora_dict.wrapper:Loading dictionaries from /usr/local/lib/python3.9/site-packages/pymorphy3_dicts_ru/data
+INFO:pymorphy3.opencorpora_dict.wrapper:format: 2.4, revision: 417150, updated: 2022-01-08T22:09:24.565962
+INFO:werkzeug:192.168.65.1 - - [20/Apr/2024 21:32:47] "POST /analyze HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [20/Apr/2024 21:34:13] "[31m[1mPOST /analyze?Content-Type=application/json HTTP/1.1[0m" 415 -
+INFO:werkzeug:192.168.65.1 - - [20/Apr/2024 21:34:14] "[31m[1mPOST /analyze?Content-Type=application/json HTTP/1.1[0m" 415 -
+INFO:werkzeug:192.168.65.1 - - [20/Apr/2024 21:34:14] "[31m[1mPOST /analyze?Content-Type=application/json HTTP/1.1[0m" 415 -
+INFO:werkzeug:192.168.65.1 - - [20/Apr/2024 21:35:05] "[31m[1mPOST /analyze?Content-Type=application/json HTTP/1.1[0m" 415 -
+INFO:werkzeug:192.168.65.1 - - [20/Apr/2024 21:35:06] "[31m[1mPOST /analyze?Content-Type=application/json HTTP/1.1[0m" 415 -
+INFO:werkzeug:192.168.65.1 - - [20/Apr/2024 21:35:12] "[31m[1mPOST /analyze?Content-Type=application/json HTTP/1.1[0m" 415 -
+INFO:pymorphy3.opencorpora_dict.wrapper:Loading dictionaries from /usr/local/lib/python3.9/site-packages/pymorphy3_dicts_ru/data
+INFO:pymorphy3.opencorpora_dict.wrapper:format: 2.4, revision: 417150, updated: 2022-01-08T22:09:24.565962
+INFO:werkzeug:192.168.65.1 - - [20/Apr/2024 21:37:04] "POST /analyze?Content-Type=application/json HTTP/1.1" 200 -
+INFO:pymorphy3.opencorpora_dict.wrapper:Loading dictionaries from /usr/local/lib/python3.9/site-packages/pymorphy3_dicts_ru/data
+INFO:pymorphy3.opencorpora_dict.wrapper:format: 2.4, revision: 417150, updated: 2022-01-08T22:09:24.565962
+INFO:werkzeug:192.168.65.1 - - [20/Apr/2024 21:42:02] "POST /analyze?Content-Type=application/json HTTP/1.1" 200 -
+INFO:pymorphy3.opencorpora_dict.wrapper:Loading dictionaries from /usr/local/lib/python3.9/site-packages/pymorphy3_dicts_ru/data
+INFO:pymorphy3.opencorpora_dict.wrapper:format: 2.4, revision: 417150, updated: 2022-01-08T22:09:24.565962
+INFO:werkzeug:192.168.65.1 - - [20/Apr/2024 21:42:16] "POST /analyze?Content-Type=application/json HTTP/1.1" 200 -
+INFO:pymorphy3.opencorpora_dict.wrapper:Loading dictionaries from /usr/local/lib/python3.9/site-packages/pymorphy3_dicts_ru/data
+INFO:pymorphy3.opencorpora_dict.wrapper:format: 2.4, revision: 417150, updated: 2022-01-08T22:09:24.565962
+INFO:werkzeug:192.168.65.1 - - [20/Apr/2024 21:44:44] "POST /analyze?Content-Type=application/json HTTP/1.1" 200 -
+INFO:pymorphy3.opencorpora_dict.wrapper:Loading dictionaries from /usr/local/lib/python3.9/site-packages/pymorphy3_dicts_ru/data
+INFO:pymorphy3.opencorpora_dict.wrapper:format: 2.4, revision: 417150, updated: 2022-01-08T22:09:24.565962
+INFO:werkzeug:192.168.65.1 - - [20/Apr/2024 21:45:10] "POST /analyze?Content-Type=application/json HTTP/1.1" 200 -
