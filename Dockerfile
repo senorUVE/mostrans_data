@@ -17,4 +17,5 @@ ENV FLASK_ENV=development
 
 EXPOSE 5000
 
-CMD ["flask", "run"]
+CMD ["gunicorn", "--workers", "4", "--bind", "0.0.0.0:5000", "app:app"]
+

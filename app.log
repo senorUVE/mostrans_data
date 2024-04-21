@@ -153,3 +153,35 @@ INFO:werkzeug:192.168.65.1 - - [20/Apr/2024 21:44:44] "POST /analyze?Content-Typ
 INFO:pymorphy3.opencorpora_dict.wrapper:Loading dictionaries from /usr/local/lib/python3.9/site-packages/pymorphy3_dicts_ru/data
 INFO:pymorphy3.opencorpora_dict.wrapper:format: 2.4, revision: 417150, updated: 2022-01-08T22:09:24.565962
 INFO:werkzeug:192.168.65.1 - - [20/Apr/2024 21:45:10] "POST /analyze?Content-Type=application/json HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [20/Apr/2024 21:50:16] "[31m[1mGET /analyze HTTP/1.1[0m" 405 -
+INFO:werkzeug:192.168.65.1 - - [21/Apr/2024 07:21:03] "[31m[1mGET /analyze?Content-Type=application/json HTTP/1.1[0m" 405 -
+INFO:werkzeug:192.168.65.1 - - [21/Apr/2024 07:21:48] "[31m[1mGET /analyze?Content-Type=application/json HTTP/1.1[0m" 405 -
+INFO:werkzeug:192.168.65.1 - - [21/Apr/2024 07:22:09] "[31m[1mGET /analyze?Content-Type=application/json HTTP/1.1[0m" 405 -
+INFO:werkzeug:192.168.65.1 - - [21/Apr/2024 07:22:10] "[31m[1mGET /analyze?Content-Type=application/json HTTP/1.1[0m" 405 -
+INFO:werkzeug:192.168.65.1 - - [21/Apr/2024 07:22:27] "[31m[1mGET /analyze HTTP/1.1[0m" 405 -
+INFO:werkzeug:192.168.65.1 - - [21/Apr/2024 07:22:38] "[31m[1mGET /analyze?Content-Type=application/json HTTP/1.1[0m" 405 -
+INFO:werkzeug:192.168.65.1 - - [21/Apr/2024 07:22:39] "[31m[1mGET /analyze?Content-Type=application/json HTTP/1.1[0m" 405 -
+INFO:werkzeug:192.168.65.1 - - [21/Apr/2024 07:22:45] "[31m[1mGET /analyze?Content-Type=application/json HTTP/1.1[0m" 405 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.28.0.2:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:pymorphy3.opencorpora_dict.wrapper:Loading dictionaries from /usr/local/lib/python3.9/site-packages/pymorphy3_dicts_ru/data
+INFO:pymorphy3.opencorpora_dict.wrapper:format: 2.4, revision: 417150, updated: 2022-01-08T22:09:24.565962
+DEBUG:tzlocal:/etc/timezone found, contents:
+ Etc/UTC
+
+DEBUG:tzlocal:/etc/localtime found
+DEBUG:tzlocal:2 found:
+ {'/etc/timezone': 'Etc/UTC', '/etc/localtime is a symlink to': 'Etc/UTC'}
+INFO:werkzeug:192.168.65.1 - - [21/Apr/2024 07:24:08] "POST /analyze?Content-Type=application/json HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [21/Apr/2024 07:24:43] "[31m[1mPOST /analyze?Content-Type=application/json HTTP/1.1[0m" 400 -
+INFO:pymorphy3.opencorpora_dict.wrapper:Loading dictionaries from /usr/local/lib/python3.9/site-packages/pymorphy3_dicts_ru/data
+INFO:pymorphy3.opencorpora_dict.wrapper:format: 2.4, revision: 417150, updated: 2022-01-08T22:09:24.565962
+DEBUG:tzlocal:/etc/timezone found, contents:
+ Etc/UTC
+
+DEBUG:tzlocal:/etc/localtime found
+DEBUG:tzlocal:2 found:
+ {'/etc/timezone': 'Etc/UTC', '/etc/localtime is a symlink to': 'Etc/UTC'}
